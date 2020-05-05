@@ -1,5 +1,7 @@
 package com.salesanalytics.app;
 
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
@@ -15,6 +17,8 @@ import com.salesanalytics.app.service.SalesService;
 @RestController
 public class SalesController {
 	
+	private static final Logger logger=LoggerFactory.getLogger(SalesController.class);
+	
 	@Autowired
 	private SalesService service;
 	
@@ -29,6 +33,7 @@ public class SalesController {
 		try {
 			return new ResponseEntity<>(service.getSalesByArea(),HttpStatus.OK);
 		} catch (Exception e) {
+			logger.error("Exception in salesByArea"+e);
 			return new ResponseEntity<>("Error Detected",HttpStatus.INTERNAL_SERVER_ERROR);
 		}
 		
@@ -40,6 +45,7 @@ public class SalesController {
 		try {
 			return new ResponseEntity<>(service.getSalesByProductId(),HttpStatus.OK);
 		} catch (Exception e) {
+			logger.error("Exception in salesByProduct"+e);
 			return new ResponseEntity<>("Error Detected",HttpStatus.INTERNAL_SERVER_ERROR);
 		}
 	}
@@ -50,6 +56,7 @@ public class SalesController {
 		try {
 			return new ResponseEntity<>(service.getSalesBySalesPerson(),HttpStatus.OK);
 		} catch (Exception e) {
+			logger.error("Exception in salesBySales"+e);
 			return new ResponseEntity<>("Error Detected",HttpStatus.INTERNAL_SERVER_ERROR);
 		}
 	}
@@ -60,8 +67,7 @@ public class SalesController {
 		try {
 			return service.addSalesDetails(salesRep);
 		} catch (Exception e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
+			logger.error("Exception in addSalesDetails"+e);
 		}
 		return null;
 	}
