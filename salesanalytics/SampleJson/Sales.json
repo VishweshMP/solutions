@@ -1,0 +1,91 @@
+{
+    "salesList": [
+        {
+            "salesRepId": 123,
+            "salesRepName": "Jon Snow",
+            "products": [
+                {
+                    "productId": 12,
+                    "productName": "YouKnowNothing",
+                    "productType": "CUP",
+                    "productAmount": 52.0,
+                    "productArea": "CHN"
+                },
+                {
+                    "productId": 1,
+                    "productName": "GoldenHand",
+                    "productType": "ORNAMENT",
+                    "productAmount": 325.0,
+                    "productArea": "BLR"
+                },
+                {
+                    "productId": 1,
+                    "productName": "GoldenHand",
+                    "productType": "ORNAMENT",
+                    "productAmount": 325.0,
+                    "productArea": "MUM"
+                }
+            ]
+        },
+        {
+            "salesRepId": 321,
+            "salesRepName": "Jamie Lannister",
+            "products": [
+                {
+                    "productId": 1,
+                    "productName": "GoldenHand",
+                    "productType": "ORNAMENT",
+                    "productAmount": 325.0,
+                    "productArea": "CHN"
+                },
+                {
+                    "productId": 1,
+                    "productName": "GoldenHand",
+                    "productType": "ORNAMENT",
+                    "productAmount": 325.0,
+                    "productArea": "KOL"
+                }
+            ]
+        },
+        {
+            "salesRepId": 568,
+            "salesRepName": "Robb Stark",
+            "products": [
+                {
+                    "productId": 25,
+                    "productName": "IronThrone",
+                    "productType": "Chair",
+                    "productAmount": 1325.0,
+                    "productArea": "CHN"
+                },
+                {
+                    "productId": 25,
+                    "productName": "IronThrone",
+                    "productType": "Chair",
+                    "productAmount": 1325.0,
+                    "productArea": "KOL"
+                }
+            ]
+        },
+        {
+            "salesRepId": 145,
+            "salesRepName": "Ned Stark",
+            "products": [
+                {
+                    "productId": 25,
+                    "productName": "IronThrone",
+                    "productType": "Chair",
+                    "productAmount": 1325.0,
+                    "productArea": "MUM"
+                },
+                {
+                    "productId": 25,
+                    "productName": "IronThrone",
+                    "productType": "Chair",
+                    "productAmount": 1325.0,
+                    "productArea": "BLR"
+                }
+            ]
+        }
+    ]
+}
